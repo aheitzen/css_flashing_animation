@@ -1,0 +1,33 @@
+:root{
+	--primary-color: blue;
+	--secondary-color: red;
+	--accent-color: white;
+	--font-family: 'Bowlby One SC', cursive;;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background-color: var(--primary-color);
+}
+
+h1 {
+	font-family: var(--font-family);
+	font-size: 100px;
+	color: var(--accent-color);t
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 85px;
+	animation-name: peace-sign-flash;
+	animation: peace-sign-flash 1s infinite;
+}
+
+@keyframes peace-sign-flash {
+	0%, 50%, 100% {
+      color: var(--accent-color);
+   }
+   25%, 75% {
+      color: var(--secondary-color);
+   }
+}
